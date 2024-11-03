@@ -2495,7 +2495,7 @@ rendrai 2
 fiers 2
 méprise 2
 forcée 2
-J 2
+j 2
 retourne 2
 Préparez 2
 novembre 2
@@ -5621,7 +5621,6 @@ fréquentes 1
 émeutes 1
 1789 1
 bref 1
-j 1
 ignorerais 1
 beignet 1
 incroyablement 1
@@ -7877,6 +7876,7 @@ taoïsme 1
 enseignements 1
 Laotseu 1
 604 1
+J 1
 C. 1
 province 1
 Henan 1

@@ -1,0 +1,33 @@
+INFO: Commencing training!              
+INFO: COMMAND: train.py --data E:\UZH\SEMESTER 4 FALL\Advanced Machine Translation\Assignment\Assg 3\atmt_2024\data\en-fr\prepared --source-lang fr --target-lang en --save-dir E:\UZH\SEMESTER 4 FALL\Advanced Machine Translation\Assignment\Assg 3\checkpoints --decoder-use-lexical-model True
+INFO: Arguments: {'cuda': False, 'data': 'E:\\UZH\\SEMESTER 4 FALL\\Advanced Machine Translation\\Assignment\\Assg 3\\atmt_2024\\data\\en-fr\\prepared', 'source_lang': 'fr', 'target_lang': 'en', 'max_tokens': None, 'batch_size': 1, 'train_on_tiny': False, 'arch': 'lstm', 'max_epoch': 10000, 'clip_norm': 4.0, 'lr': 0.0003, 'patience': 3, 'log_file': None, 'save_dir': 'E:\\UZH\\SEMESTER 4 FALL\\Advanced Machine Translation\\Assignment\\Assg 3\\checkpoints', 'restore_file': 'checkpoint_last.pt', 'save_interval': 1, 'no_save': False, 'epoch_checkpoints': False, 'decoder_use_lexical_model': 'True', 'encoder_embed_dim': 64, 'encoder_embed_path': None, 'encoder_hidden_size': 64, 'encoder_num_layers': 1, 'encoder_bidirectional': 'True', 'encoder_dropout_in': 0.25, 'encoder_dropout_out': 0.25, 'decoder_embed_dim': 64, 'decoder_embed_path': None, 'decoder_hidden_size': 128, 'decoder_num_layers': 1, 'decoder_dropout_in': 0.25, 'decoder_dropout_out': 0.25, 'decoder_use_attention': 'True', 'device_id': 0}
+INFO: Loaded a source dictionary (fr) with 4000 words
+INFO: Loaded a target dictionary (en) with 4000 words
+INFO: Built a model with 1572672 parameters
+INFO: Epoch 000: loss 4.289 | lr 0.0003 | num_tokens 9.1 | batch_size 1 | grad_norm 37.21 | clip 1
+INFO: Epoch 000: valid_loss 6 | num_tokens 9.14 | batch_size 500 | valid_perplexity 402
+INFO: Epoch 001: loss 3.446 | lr 0.0003 | num_tokens 9.1 | batch_size 1 | grad_norm 44.87 | clip 1
+INFO: Epoch 001: valid_loss 4.95 | num_tokens 9.14 | batch_size 500 | valid_perplexity 141
+INFO: Epoch 002: loss 3.076 | lr 0.0003 | num_tokens 9.1 | batch_size 1 | grad_norm 48.77 | clip 1
+INFO: Epoch 002: valid_loss 4.71 | num_tokens 9.14 | batch_size 500 | valid_perplexity 111
+INFO: Epoch 003: loss 2.823 | lr 0.0003 | num_tokens 9.1 | batch_size 1 | grad_norm 50.63 | clip 1
+INFO: Epoch 003: valid_loss 3.87 | num_tokens 9.14 | batch_size 500 | valid_perplexity 48
+INFO: Epoch 004: loss 2.63 | lr 0.0003 | num_tokens 9.1 | batch_size 1 | grad_norm 51.74 | clip 1
+INFO: Epoch 004: valid_loss 3.56 | num_tokens 9.14 | batch_size 500 | valid_perplexity 35.1
+INFO: Epoch 005: loss 2.476 | lr 0.0003 | num_tokens 9.1 | batch_size 1 | grad_norm 52.73 | clip 0.9994
+INFO: Epoch 005: valid_loss 3.22 | num_tokens 9.14 | batch_size 500 | valid_perplexity 25
+INFO: Epoch 006: loss 2.353 | lr 0.0003 | num_tokens 9.1 | batch_size 1 | grad_norm 52.92 | clip 0.9995
+INFO: Epoch 006: valid_loss 3.16 | num_tokens 9.14 | batch_size 500 | valid_perplexity 23.6
+INFO: Epoch 007: loss 2.247 | lr 0.0003 | num_tokens 9.1 | batch_size 1 | grad_norm 53.18 | clip 0.999
+INFO: Epoch 007: valid_loss 3.06 | num_tokens 9.14 | batch_size 500 | valid_perplexity 21.3
+INFO: Epoch 008: loss 2.156 | lr 0.0003 | num_tokens 9.1 | batch_size 1 | grad_norm 53.19 | clip 0.998
+INFO: Epoch 008: valid_loss 2.98 | num_tokens 9.14 | batch_size 500 | valid_perplexity 19.8
+INFO: Epoch 009: loss 2.082 | lr 0.0003 | num_tokens 9.1 | batch_size 1 | grad_norm 53.7 | clip 0.9982
+INFO: Epoch 009: valid_loss 2.85 | num_tokens 9.14 | batch_size 500 | valid_perplexity 17.2
+INFO: Epoch 010: loss 2.016 | lr 0.0003 | num_tokens 9.1 | batch_size 1 | grad_norm 53.67 | clip 0.9971
+INFO: Epoch 010: valid_loss 2.88 | num_tokens 9.14 | batch_size 500 | valid_perplexity 17.9
+INFO: Epoch 011: loss 1.955 | lr 0.0003 | num_tokens 9.1 | batch_size 1 | grad_norm 53.85 | clip 0.9972
+INFO: Epoch 011: valid_loss 2.91 | num_tokens 9.14 | batch_size 500 | valid_perplexity 18.4
+INFO: Epoch 012: loss 1.905 | lr 0.0003 | num_tokens 9.1 | batch_size 1 | grad_norm 53.99 | clip 0.9972
+INFO: Epoch 012: valid_loss 2.88 | num_tokens 9.14 | batch_size 500 | valid_perplexity 17.8
+INFO: No validation set improvements observed for 3 epochs. Early stop!
