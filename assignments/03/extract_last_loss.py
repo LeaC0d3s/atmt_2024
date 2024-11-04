@@ -5,8 +5,8 @@ checkpoint = torch.load("bpe_merge10000/checkpoints/checkpoint_best.pt", map_loc
 # Inspect checkpoint keys to see what data is available
 print("Checkpoint keys:", checkpoint.keys())
 
-last_epoch = checkpoint.get('epoch')  # or checkpoint['epoch'] if it's guaranteed to be there
-best_val_loss = checkpoint.get('best_loss')  # might also be 'best_loss', depending on your saving mechanism
+last_epoch = checkpoint.get('epoch') 
+best_val_loss = checkpoint.get('best_loss')  # might also be 'valid_loss'
 
 print(f"Last Epoch: {last_epoch}")
-print(f"Best Validation Loss: {best_val_loss}")
+print(f"Best Validation Loss: {best_val_loss}") # kinda looks more like the perplexity scores than the loss
