@@ -13,6 +13,8 @@ the script `preprocess_data.sh`.
 This may be useful if you choose to apply subword
 segmentation or a data augmentation method.
 
+# This Submission is by Lea Müller and  Ashwini Kamaraj
+
 ## Train Model with BPE (+ Lexical Model)
 
 Before you start you need to create a folder in "assignments/03" called "bpe", here the model checkpoints and translations data will be saved in automatically.
