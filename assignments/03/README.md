@@ -62,4 +62,10 @@ python3 translate.py --data data/en-fr/prepared --dicts data/en-fr/prepared --ch
 bash scripts/postprocess.sh assignments/03/lexical_model/fr_en_translation.txt assignments/03/lexical_model/fr_en_translation.p.txt en
 ```
 
+## Output Data
+
+The main output data from our trained models and translated texts are in the assignment 03 folder:
+- **results_visualization/** --> contains the training loss and perplexity over the Epochs as well as the script that produced our visualization Graph.
+- 5 additional folder with the model names, containing the translated output + the postprocessed output as well as a file contianing the sacreBLEU output.
+
 
