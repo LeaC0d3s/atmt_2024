@@ -58,7 +58,10 @@ class BeamSearch(object):
         return node
 
     def prune(self):
-        """ Removes all nodes but the beam_size best ones (lowest neg log prob) """
+        """ Removes all nodes but the beam_size best ones (lowest neg log prob) 
+        Only keeps the unfinished hypotheses if their probability score is better than the highest scoring 'completed' hypotheses.
+        Keeps all the finished hypotheses regardless of score only removed if they exeed the defined beam size.
+        """
 
         #print("I'm currently here hahahahha")
         # Keep track of how many search paths are already finished (EOS) # unused in new approach
@@ -70,7 +73,7 @@ class BeamSearch(object):
         # Determine the best score of completed hypotheses
         best_finished_score = None
 
-        # Extract nodes and populate the temporary queue
+        # Extract nodes and fill the temporary queue
         while not self.nodes.empty():
             node = self.nodes.get()
             temp_queue.put((node[0], next(self._counter), node[2]))
