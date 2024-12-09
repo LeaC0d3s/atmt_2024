@@ -138,7 +138,6 @@ def main(args):
                 search = node.search  # Get the BeamSearch instance this node belongs to
                 search.add(-node.eval(args.alpha), node)
             # print(nodes[0].is_complete)
-            # Extract only active nodes
             if not nodes:
                 break  # Terminate when all beams are completed
 
@@ -192,7 +191,7 @@ def main(args):
                         )
                         #mark it as complete
                         node.is_complete = True
-                        # use add_final to pad it to max length
+                        # use add_final to pad it to max length but keep it in the nodes instead of a seperate priority queue
                         search.add_final(-node.eval(args.alpha), node)
 
                     # Add the node to current nodes for next iteration
